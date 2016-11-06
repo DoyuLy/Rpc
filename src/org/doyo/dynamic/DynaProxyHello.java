@@ -18,7 +18,7 @@ public class DynaProxyHello implements InvocationHandler {
 				this.origin.getClass().getInterfaces(), this);
 	}
 
-	@Override
+	//@Override 写不写override都没关系, jvm会识别到是重写
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		Object result = null;
 		try {

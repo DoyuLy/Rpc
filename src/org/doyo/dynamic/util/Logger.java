@@ -8,7 +8,7 @@ public class Logger {
             System.out.println(new Date().toLocaleString() + " " + context); 
         } 
         if (level.equals(Level.DEBUGE)) { 
-            System.err.println(new Date() + " " + context); 
+            System.err.println(new Date().toLocaleString() + " " + context); 
         } 
     } 
 }
